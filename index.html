@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando el Total</title>
+    <link href="assets/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    
+    <main>
+        <article class="card-product">
+            <img src="assets/img/laptop-gamer-amed.png" alt="Laptop Gamer AMD" />
+            <h2>Laptop Gamer AMD</h2>
+            <form onsubmit="return false;">
+                <label for="amount">Cantidad</label>
+                <input type="number" id="amount" name="amount" placeholder="Ej: 1" required />
+                <label for="color">Color</label>
+                <input id="color" name="color" required placeholder="Ej: red" />
+                <h3>Precio: <data id="price" value="40000">$40.0000</data></h3>
+                <button type="submit" onclick="calculate()" id="btnTotal">Calcular total</button>
+            </form>
+        </article>
+        <div id="result">
+            <span>Total: <strong id="resultTotal">$0</strong></span>
+            <span>Cantidad: <strong id="resultAmount">0</strong></span>
+            <span>Color: <span id="resultColor"></span></span>
+        </div>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

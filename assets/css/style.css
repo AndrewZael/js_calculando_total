@@ -1,0 +1,124 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+}
+main{
+    margin: 0 auto;
+}
+main > *{
+    flex: 1;
+}
+.card-product{
+    background-color: green;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+.card-product img{
+    width: 80%;
+}
+.card-product form{
+    width: 90%;
+}
+.card-product form label{
+    margin-bottom: 0.3rem;
+}
+.card-product form input{
+    padding: 0.7rem 0.5rem;
+    margin-bottom: 1rem;
+}
+.card-product button{
+    background-color: orange;
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.card-product button:hover{
+    box-shadow: 0 .25rem .125rem rgb(0 0 0 / 90%);
+}
+.card-product button:active{
+    box-shadow: 
+    0 .125rem .063rem rgb(0 0 0 / 90%) inset, 
+    0 -0.063rem 0 rgb(0 0 0 / 100%) inset;
+}
+#result{
+    justify-content: center;
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    padding: 2rem 0;
+}
+#result > span{
+    display: block;
+    margin-bottom: .8rem;
+    width: 50%;
+}
+#resultColor{
+    border: .063rem solid #d9d9d9;
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+    top: .25rem;
+    position: relative;
+    vertical-align: bottom;
+    margin-left: .5rem;
+}
+
+/**/
+body,#result{
+    background-color: #f4f4f4;
+}
+#result, 
+.card-product{
+    align-items: center;
+}
+#result, 
+.card-product, 
+.card-product form{
+    display: flex;
+    flex-direction: column;
+}
+#result,
+.card-product h3{
+    width: 100%;
+}
+.card-product form input,
+.card-product button{
+    border: none;
+    border-radius: 0.25rem;
+}
+.card-product form label,
+.card-product h3{
+    text-align: left;
+}
+.card-product,
+.card-product button{
+    color: white;
+}
+/**/
+
+@media (min-width: 575px) {
+    body{
+        background-color: white;
+    }
+    main{
+        display: flex;
+        align-items: stretch;
+        gap: 1rem;
+        padding: 1rem 0;
+        width: 80%;
+    }
+    .card-product{
+        border-radius: .25rem;
+    }
+    #result{
+        box-shadow: 0 0 .2rem rgb(0 0 0 / 20%);
+        border-radius: .25rem;
+    }
+}
+@media (min-width: 768px) {
+    main{
+        width: 43.75rem;
+    }
+}
